@@ -27,3 +27,9 @@ var
 sdist
 develop-eggs
 .installed.cfg
+
+#############
+## Other - My personal keylogger files, with the keys and sites in them.
+#############
+cl.py
+vl.py

